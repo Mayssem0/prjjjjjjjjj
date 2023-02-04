@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Unigine - Epic Games Made For True Gamers!</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../unigine-master/assets/css/styles.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="../unigine-master/index.html" class="navbar-link" data-nav-link>home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../unigine-master/index.html" class="navbar-link" data-nav-link>tournament</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../unigine-master/index.html" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Stream</a>
+          </li>
+
+        </ul>
+      </nav>
+     
+
+      <a href="#" class="btn" data-btn>join our team</a>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+ 
+<style>
+#container {
+    margin: auto;
+    margin-top: 150px;
+	width: 800px;
+	height: 600px;
+	border: 10px #333 solid;
+    border-radius: 20px;
+}
+#videoElement {
+
+	width: 780px;
+	height: 580px;
+	background-color: #666;
+    border-radius: 10px;
+}
+
+.follow{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 35px;
+    margin-right: 700px;
+    margin-left: 700px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+</style>
+</head>
+ 
+<body>
+ 
+<div id="container">
+	<video autoplay="true" id="videoElement">
+	
+	</video>
+    
+  
+</div><br>
+<p style="text-align: center;">Vues: 13k | Likes : 7885</p><p class="follow" style="text-align: center;background-color: rgba(71, 1, 30, 0.466);">FOLLOW NOW</p>
+  <br><br><br>
+<script>
+var video = document.querySelector("#videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
+}
+</script>
+
+  
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="/codejs.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
